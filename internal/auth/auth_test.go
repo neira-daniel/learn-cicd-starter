@@ -19,7 +19,7 @@ func TestAPIKey(t *testing.T) {
 		"invalid header": {
 			header: http.Header{"Authorization": []string{"ApiKeyV9 the_api_key"}},
 			want:   "",
-			result: true,
+			result: false,
 		},
 	}
 
